@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+char str[100];
+printf("문자열을 입력하세요:");
+fgets(str,sizeof(str),stdin);
+int length = 0;
+while (str[length] != '\0'){
+length++;
+}
+printf("문자열의 길이: %d\n",length - 1);
+return 0;
+}
